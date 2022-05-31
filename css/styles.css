@@ -89,7 +89,7 @@ nav img {
 }
 
 .navegacion_principal ul li {
-    margin: 0 0 0 0;
+    display: block;
 }
 
 .navegacion_principal ul li a {
@@ -98,6 +98,11 @@ nav img {
     padding-left: 1em;
     text-transform: uppercase;
 
+}
+
+.navegacion_principal ul li a:hover {
+    color: #ffffff;
+    transition: 1s;
 }
 
 /* ---- FIN NAV ----*/
@@ -175,9 +180,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-footer {
     padding: 0 0 0 0;
     color: white;
     background-color: rgb(0, 0, 0);
@@ -202,21 +204,21 @@ footer h4 {
 }
 
 
-/* ---- VIDEOJUEGOS ----*/
+/* ---- VIDEOJUEGOS Y PELÍCULAS ----*/
 
 /* ---- MAIN ----*/
 
-.videojuegos {
+.seccion_general {
     margin:4em 2em 2em 2em;
 }
 
-.videojuegos h2 {
+.seccion_general h2 {
     font-size: 2em;
     margin: 0 0 1em 0;
     color: #ffffff;
 }
 
-.videojuegos h3 {
+.seccion_general h3 {
     font-size: 1.3em;
     color: #ffffff;
     padding: 0 0 1.5em 0;
@@ -224,54 +226,58 @@ footer h4 {
     text-transform: uppercase;
 }
 
-.titulo_destacado_videojuegos {
+.titulo_destacado_obra {
     margin: 2em -2em 0 -5.2em;
 }
 
-.titulo_destacado_videojuegos div {
+.titulo_destacado_obra div {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding-bottom: 1em;
 }
 
-.sh2_img{
+.animacion_liston {
+    animation: infinite;
+}
+
+.imagenes_destacadas {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sh2_img img {
+.imagenes_destacadas img {
     width: 105%;
     padding-bottom: 0.5em;
 }
 
-.videojuegos article {
+.seccion_general article {
     padding: 0 0 6em 0;
 }
 
-.videojuegos article h4 {
+.seccion_general article h4 {
     font-size: 1.6em;
     color: #ffffff;
     padding: 0 0 1em 0;
 }
 
-.videojuegos article p {
+.seccion_general article p {
     font-size: 1em;
     color: #ffffff;
     padding: 0.7em 0 0.5em 0;
 }
 
-.videojuegos article a {
+.seccion_general article a {
     font-size: 1.2em;
     color: #ffffff;
 }
 
-.videojuegos_categorias h3 {
+.obras_categorias h3 {
     font-size: 1.6em;
 }
 
-.videojuegos_categorias ul {
+.obras_categorias ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -288,163 +294,7 @@ footer h4 {
     padding-left: 0.8em;
 }
 
-
-
-/* 
-.videojuegos_titulo h2 {
-    font-size: 4em;
-    color: #ffffff;
-}
-
-.titulo_destacado {
-    margin-bottom: 1.3em;
-}
-
-.titulo_destacado h3 {
-    margin: 0 0 0 0;
-    display: inline;
-}
-
-.titulo_destacado img {
-    margin: 0 0 -1.2em 2em;
-    display: inline;
-}
-
-.sh2_img img {
-    display: inline;
-}
-
-#sh2_2 {
-    margin: 0 0 0 0;
-}
-
-#sh2_3 {
-    margin: -40em 0em 1.2em 60em;
-}
-
-.videojuegos_categorias ul li {
-    display: inline;
-}
-
-.videojuegos {
-    margin: 2em 44em 2em 2em;
-}
-
-.videojuegos h3 {
-    font-size: 1.9em;
-    color: #ffffff;
-    padding: 0 0 1.5em 0;
-    margin: 2em 0 0 0;
-}
-
-.videojuegos article {
-    padding: 0 0 6em 0;
-}
-
-.videojuegos article h4 {
-    font-size: 1.6em;
-    color: #ffffff;
-    padding: 0 0 1em 0;
-}
-
-.videojuegos article p {
-    font-size: 1.2em;
-    color: #ffffff;
-    padding: 0.7em 0 0.5em 0;
-}
-
-.videojuegos article a {
-    font-size: 1.2em;
-    color: #ffffff;
-} */
-
-/* ---- FIN DE VIDEOJUEGOS ----*/
-
-
-
-
-
-
-
-
-
-/* ---- PELÍCULAS ----*/
-
-/* ---- MAIN ----*/
-
-.peliculas_titulo h2 {
-    font-size: 4em;
-    color: #ffffff;
-}
-
-.titulo_destacado {
-    margin-bottom: 1.3em;
-}
-
-s_destacado h3 {
-    margin: 0 0 0 0;
-    display: inline;
-}
-
-.titulo_destacado img {
-    margin: 0 0 -1.2em 2em;
-    display: inline;
-}
-
-.sh2_img img {
-    display: inline;
-}
-
-
-#exorcista_2 {
-    margin: -40em 0em 1.2em 60em;
-}
-
-.peliculas_categorias ul li {
-    display: inline;
-}
-
-.peliculas {
-    margin: 2em 44em 2em 2em;
-}
-
-.peliculas h3 {
-    font-size: 1.9em;
-    color: #ffffff;
-    padding: 0 0 1.5em 0;
-    margin: 2em 0 0 0;
-}
-
-.peliculas article {
-    padding: 0 0 6em 0;
-}
-
-.peliculas article h4 {
-    font-size: 1.6em;
-    color: #ffffff;
-    padding: 0 0 1em 0;
-}
-
-.peliculas article p {
-    font-size: 1.2em;
-    color: #ffffff;
-    padding: 0.7em 0 0.5em 0;
-}
-
-.peliculas article a {
-    font-size: 1.2em;
-    color: #ffffff;
-}
-
-/* ---- FIN DE PELÍCULAS ----*/
-
-
-
-
-
-
-
-
+/* ---- FIN DE VIDEOJUEGOS Y PELÍCULAS ----*/
 
 
 /* ---- LOGIN ----*/
@@ -484,10 +334,6 @@ s_destacado h3 {
 }
 
 /* ---- FIN DE LOGIN ----*/
-
-
-
-
 
 
 /* ---- REGISTRO ----*/
@@ -603,25 +449,23 @@ s_destacado h3 {
         text-align: start;
     }
     
-    .obras {
+    .obras_generales {
         display: flex;
         align-items: flex-end;
     }
     
-    .obras p {
+    .obras_generales p {
         padding: 0 0 0 0;
         margin: 0 0 0 1.5em;
     }
     
-    .obras a {
+    .obras_generales a {
         margin: 0 -18em 0 0;
     }
     
     .index_section article {
         padding: 0 0 6em 0;
     }
-    
-    
     
     .index_section article h4 {
         font-size: 1.6em;
@@ -668,29 +512,29 @@ s_destacado h3 {
         margin: 1.5em 0 0 -29em;
     }
 
-    /* ---- VIDEOJUEGOS ----*/
+    /* ---- VIDEOJUEGOS Y PELÍCULAS ----*/
     
     .navegacion_principal {
         height: 10em;
     }
 
-    .videojuegos {
+    .seccion_general {
         margin: 2em 44em 2em 2em;
     }
     
-    .videojuegos h2 {
+    .seccion_general h2 {
         font-size: 4em;
         color: #ffffff;
         margin: 0 -10em 0 0em;
         text-align: start;
     }
     
-    .parrafo_principal_videojuegos {
+    .parrafo_principal_general {
         text-align: start;
 
     }
 
-    .videojuegos h3 {
+    .seccion_general h3 {
         font-size: 1.9em;
         color: #ffffff;
         padding: 0 0 1.5em 0;
@@ -698,15 +542,15 @@ s_destacado h3 {
         text-align: start;
     }
     
-    .videojuegos_destacado {
+    .obra_destacada {
         margin: 0 2em 0 2em;
     }
     
-    .titulo_destacado_videojuegos div {
+    .titulo_destacado_obra div {
         justify-content: flex-start;
     }
 
-    .sh2_img {
+    .imagenes_destacadas {
         flex-direction: row;
         max-width: 78%;
         margin: 0 2em 0 -2em;
@@ -714,52 +558,54 @@ s_destacado h3 {
         padding: 0 0 0 0;
     }
     
-    .sh2_3 {
+    .imagenes_destacadas_2 {
         margin-left: 1em;
     }
 
-    .obras {
+    .obras_generales {
         display: flex;
         align-items: flex-end;
     }
     
-    .obras p {
+    .obras_generales p {
         padding: 0 0 0 0;
         margin: 0 0 0 1.5em;
     }
     
-    .obras a {
+    .obras_generales a {
         margin: 0 -18em 0 0;
         padding-left: 1em;
     }
     
-    .videojuegos article {
+    .seccion_general article {
         padding: 0 0 6em 0;
     }
     
     
     
-    .videojuegos article h4 {
+    .seccion_general article h4 {
         font-size: 1.6em;
         color: #ffffff;
         padding: 0 0 1em 0;
         text-align: start;
     }
     
-    .videojuegos article p {
+    .seccion_general article p {
         font-size: 1.2em;
         color: #ffffff;
         padding: 0.7em 0 0.5em 0;
         text-align: start;
     }
     
-    .videojuegos article a {
+    .seccion_general article a {
         font-size: 1.2em;
         color: #ffffff;
     }
 
-    .videojuegos_categorias h3 {
+    .obras_categorias h3 {
         margin-left: -0.6em;
     }
+
+    /* ---- FIN DE VIDEOJUEGOS Y PELÍCULAS ----*/
 
 }

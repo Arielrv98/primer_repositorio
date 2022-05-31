@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Películas</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body class="background_peliculas">
-
-    <header>
+    <div class="gridcontainer">
         <nav class="navegacion_principal">
             <img src="../img/logo.png">
             <ul>
@@ -23,13 +23,10 @@
                 <li><a href="login.html">INICIAR SESIÓN</a></li>
             </ul>
         </nav>
-    </header>
-
-    <main>
-        <section class="peliculas">
-            <article class="peliculas_titulo">
+        <section class="seccion_general">
+            <article>
                 <h2>Películas que todo fanático debe ver</h2>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                <p class="parrafo_principal_general"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
                     expedita reiciendis cumque quia iste, omnis eveniet neque! Ullam
                     voluptate neque quae suscipit necessitatibus?Lorem ipsum dolor sit
@@ -43,66 +40,75 @@
                     sit amet consectetur adipisicing elit. Est a adipisci recusandae aliquid
                     necessitatibus in odit molestias dolor eveniet sequi quaerat
                     consectetur, voluptatem architecto nemo beatae.</p>
-            </article> 
-            <article>
-                <div class="titulo_destacado">
-                    <h3>PELÍCULA DESTACADA: El Exorcista - 9.8</h3>
-                    <img src="../img/iconos/destacado.png">
+            </article>
+            <article class="obra_destacada">
+                <div class="titulo_destacado_obra">
+                    <h3>PELÍCULA DESTACADA:</h3>
+                    <div>
+                        <h3>El Exorcista - 9.8</h3>
+                        <img class="animate__animated animate__pulse animacion_liston" src="../img/iconos/destacado.png">
+                    </div>
                 </div>
-                <div class="sh2_img">
-                    <img id="exorcista_1" src="../img/exorcista_1.jpg">
-                    <img id="exorcista_2" src="../img/exorcista_2.jpg">
+                <div class="imagenes_destacadas">
+                    <img class="imagenes_destacadas_1" src="../img/exorcista_1.jpg">
+                    <img class="imagenes_destacadas_2" src="../img/exorcista_2.jpg">
                 </div>
             </article>
-            <article class="peliculas_categorias">
+            <article class="obras_categorias">
                 <h3>Todas las reseñas</h3>
                 <h4>Categorías:</h4>
                 <ul>
-                    <li><a href="">Slasher /</a></li>
-                    <li><a href="">Thriller /</a></li>
-                    <li><a href="">Terror Psicológico /</a></li>
-                    <li><a href="">Sobrenatural /</a></li>
-                    <li><a href="">Gore /</a></li>
+                    <li><a href="">/ Slasher /</a></li>
+                    <li><a href="">/ Thriller /</a></li>
+                    <li><a href="">/ Terror Psicológico /</a></li>
+                    <li><a href="">/ Sobrenatural /</a></li>
+                    <li><a href="">/ Gore /</a></li>
                 </ul>
-            </article>         
+            </article>
             <article>
                 <h4>Alien: El octavo pasajero</h4>
-                <img src="../img/alien.jpg">
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
-                    expedita reiciendis cumque quia iste, omnis eveniet neque! Ullam
-                    voluptate neque quae suscipit necessitatibus?Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Voluptas aspernatur obcaecati
-                    consequatur voluptatibus autem perspiciatis totam soluta nisi
-                    molestias assumenda, excepturi numquam magnam sapiente. Placeat
-                    ducimus sunt voluptatem libero omnis! </p>
-                <a href="">Ver más</a>
+                <div class="obras_generales">
+                    <img src="../img/alien.jpg">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
+                        expedita reiciendis cumque quia iste, omnis eveniet neque! Ullam
+                        voluptate neque quae suscipit necessitatibus?Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Voluptas aspernatur obcaecati
+                        consequatur voluptatibus autem perspiciatis totam soluta nisi
+                        molestias assumenda, excepturi numquam magnam sapiente. Placeat
+                        ducimus sunt voluptatem libero omnis! </p>
+                    <a href="">Ver más</a>
+                </div>
             </article>
             <article>
                 <h4>Scream</h4>
-                <img src="../img/scream.jpg">
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
-                    expedita reiciendis cumque quia iste, omnis eveniet neque! Ullam
-                    voluptate neque quae suscipit necessitatibus?Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Voluptas aspernatur obcaecati
-                    consequatur voluptatibus autem perspiciatis totam soluta nisi
-                    molestias assumenda, excepturi numquam magnam sapiente. Placeat
-                    ducimus sunt voluptatem libero omnis! </p>
-                <a href="">Ver más</a>
+                <div class="obras_generales">
+                    <img src="../img/scream.jpg">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
+                        expedita reiciendis cumque quia iste, omnis eveniet neque! Ullam
+                        voluptate neque quae suscipit necessitatibus?Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Voluptas aspernatur obcaecati
+                        consequatur voluptatibus autem perspiciatis totam soluta nisi
+                        molestias assumenda, excepturi numquam magnam sapiente. Placeat
+                        ducimus sunt voluptatem libero omnis! </p>
+                    <a href="">Ver más</a>
+                </div>
             </article>
             <article>
                 <h4>Viernes 13 parte IV: El último capítulo</h4>
-                <img src="../img/viernes_13_parte_4.jpg">
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
-                    expedita reiciendis cumque quia iste, omnis eveniet neque! Ullam
-                    voluptate neque quae suscipit necessitatibus?Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Voluptas aspernatur obcaecati
-                    consequatur voluptatibus autem perspiciatis totam soluta nisi
-                    molestias assumenda, excepturi numquam magnam sapiente. Placeat
-                    ducimus sunt voluptatem libero omnis! </p>
-                <a href="">Ver más</a>
+                <div class="obras_generales">
+                    <img src="../img/viernes_13_parte_4.jpg">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
+                        expedita reiciendis cumque quia iste, omnis eveniet neque! Ullam
+                        voluptate neque quae suscipit necessitatibus?Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Voluptas aspernatur obcaecati
+                        consequatur voluptatibus autem perspiciatis totam soluta nisi
+                        molestias assumenda, excepturi numquam magnam sapiente. Placeat
+                        ducimus sunt voluptatem libero omnis! </p>
+                    <a href="">Ver más</a>
+                </div>
             </article>
             <article class="numero_de_pag">
                 <ul>
@@ -113,19 +119,17 @@
                 </ul>
             </article>
         </section>
-    </main>
-
-    <footer>
-        <div>
-            <h4>¡Síguenos en nuestras redes!</h4>
-            <ul>
-                <li><a href=""><img src="../img/iconos/facebook.png"></a></li>
-                <li><a href=""><img src="../img/iconos/instagram.png"></a></li>
-                <li><a href=""><img src="../img/iconos/twitter.png"></a></li>
-            </ul>
-        </div>
-    </footer>
-
+        <footer>
+            <div>
+                <h4>¡Síguenos en nuestras redes!</h4>
+                <ul>
+                    <li><a href=""><img src="../img/iconos/facebook.png"></a></li>
+                    <li><a href=""><img src="../img/iconos/instagram.png"></a></li>
+                    <li><a href=""><img src="../img/iconos/twitter.png"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
