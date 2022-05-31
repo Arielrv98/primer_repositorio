@@ -455,12 +455,12 @@ footer h4 {
     }
     
     .obras_generales p {
-        padding: 0 0 0 0;
         margin: 0 0 0 1.5em;
     }
     
     .obras_generales a {
         margin: 0 -18em 0 0;
+        padding-left: 1em;
     }
     
     .index_section article {
@@ -562,21 +562,6 @@ footer h4 {
         margin-left: 1em;
     }
 
-    .obras_generales {
-        display: flex;
-        align-items: flex-end;
-    }
-    
-    .obras_generales p {
-        padding: 0 0 0 0;
-        margin: 0 0 0 1.5em;
-    }
-    
-    .obras_generales a {
-        margin: 0 -18em 0 0;
-        padding-left: 1em;
-    }
-    
     .seccion_general article {
         padding: 0 0 6em 0;
     }
