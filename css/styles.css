@@ -13,6 +13,10 @@
     text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .background_juegos {
     background-image: url(../img/background_juegos.jpg);
     background-repeat: no-repeat;
@@ -53,12 +57,17 @@
 .gridcontainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 120px auto 80px;
+    grid-template-rows: 140px 40px auto 80px;
     grid-row-gap: 1em;
     grid-template-areas:
         "nav"
+        "buscador"
         "destacado"
         "footer";
+}
+
+.buscador {
+    grid-area: buscador;
 }
 
 /* ---- NAV ----*/
@@ -97,12 +106,33 @@ nav img {
     font-size: 1.2em;
     padding-left: 1em;
     text-transform: uppercase;
+    text-decoration: none;
 
 }
 
 .navegacion_principal ul li a:hover {
     color: #ffffff;
     transition: 1s;
+}
+
+
+
+.search_color {
+    color: #6f0a20;
+}
+
+.page_color {
+    color: black;
+}
+
+.page_color:hover {
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.background_dropdown:hover {
+    background-color: black;
 }
 
 /* ---- FIN NAV ----*/
@@ -241,16 +271,16 @@ footer h4 {
     animation: infinite;
 }
 
-.imagenes_destacadas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.carrusel_control {
+    margin: -5em 0 2em 0;
 }
 
-.imagenes_destacadas img {
-    width: 105%;
-    padding-bottom: 0.5em;
+.imagenes_destacadas {
+    
+    display: none;
 }
+
+
 
 .seccion_general article {
     padding: 0 0 6em 0;
@@ -271,6 +301,7 @@ footer h4 {
 .seccion_general article a {
     font-size: 1.2em;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .obras_categorias h3 {
@@ -281,6 +312,10 @@ footer h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.obras_categorias a {
+    text-decoration: none;
 }
 
 .numero_de_pag ul {
@@ -394,11 +429,12 @@ footer h4 {
     .gridcontainer {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 120px 30px auto 80px;
+        grid-template-rows: 120px 50px 40px auto 80px;
         grid-row-gap: 2em;
         grid-template-areas:
             "nav"
             "nav"
+            "buscador"
             "destacado"
             "footer";
     }
@@ -460,7 +496,7 @@ footer h4 {
     
     .obras_generales a {
         margin: 0 -18em 0 0;
-        padding-left: 1em;
+        padding-left: 1em;  
     }
     
     .index_section article {
@@ -486,6 +522,7 @@ footer h4 {
         color: #ffffff;
     }
     
+
     /* ---- FOOTER ----*/
     
     footer {
@@ -549,15 +586,26 @@ footer h4 {
     .titulo_destacado_obra div {
         justify-content: flex-start;
     }
+    
+    .carrusel_control {
+        display: none;
+    }
 
     .imagenes_destacadas {
+        display: flex;
         flex-direction: row;
         max-width: 78%;
         margin: 0 2em 0 -2em;
         justify-content: flex-start;
         padding: 0 0 0 0;
+        
     }
     
+    .imagenes_destacadas img {
+        width: 105%;
+        padding-bottom: 0.5em;
+    }
+
     .imagenes_destacadas_2 {
         margin-left: 1em;
     }

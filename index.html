@@ -6,22 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body class="background_index">
     <div class="gridcontainer">
+
         <nav class="navegacion_principal">
             <img src="./img/logo.png" alt="Fanáticos del Terror">
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="./pages/peliculas.html">PELÍCULAS</a></li>
-                <li><a href="">LIBROS</a></li>
-                <li><a href="./pages/videojuegos.html">VIDEOJUEGOS</a></li>
-                <li><a href="">ESPECIALES</a></li>
-                <li><a href="pages/login.html">INICIAR SESIÓN</a></li>
-            </ul>
+            <div>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" aria-current="page" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PELÍCULAS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">PELÍCULAS</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Slasher</a></li>
+                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Thriller</a></li>
+                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Terror Psicológico</a></li>
+                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Sobrenatural</a></li>
+                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Gore</a></li>
+                          </ul>
+                      </li>
+                    <li><a href="">LIBROS</a></li>
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" aria-current="page" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">VIDEOJUEGOS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">VIDEOJUEGOS</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">Survival Horror</a></li>
+                            <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">Acción y Terror</a></li>
+                            <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">Sigilo</a></li>
+                            <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">Jump Horror</a></li>
+                          </ul>
+                      </li>
+                    <li><a href="">ESPECIALES</a></li>
+                    <li><a href="pages/login.html">INICIAR SESIÓN</a></li>
+                </ul>
+            </div>
         </nav>
+
+        <div class="navbar navbar-light buscador">
+            <div class="container-fluid col-sm-8 col-md-6 col-lg-4">
+              <form class="d-flex container">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-danger search_color" type="submit">Buscar</button>
+              </form>
+            </div>
+        </div>
         <section class="index_section destacado">
             <article>
                 <h2>Las mejores reseñas dentro del universo más aterrador</h2>
@@ -86,14 +122,25 @@
                     <a href="">Ver más</a>
                 </div>
             </article>
-            <article class="numero_de_pag">
-                <ul>
-                    <li><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">→</a></li>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link page_color" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item hover"><a class="page-link page_color" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link page_color" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link page_color" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link page_color" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
                 </ul>
-            </article>
+              </nav>
+              
         </section>
         <footer>
             <div>
@@ -106,6 +153,10 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
