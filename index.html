@@ -14,48 +14,76 @@
 <body class="background_index">
     <div class="gridcontainer">
 
-        <nav class="navegacion_principal">
-            <img src="./img/logo.png" alt="Fanáticos del Terror">
-            <div>
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" aria-current="page" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PELÍCULAS</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">PELÍCULAS</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Slasher</a></li>
-                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Thriller</a></li>
-                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Terror Psicológico</a></li>
-                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Sobrenatural</a></li>
-                            <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Gore</a></li>
-                          </ul>
-                      </li>
-                    <li><a href="">LIBROS</a></li>
-                    
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" aria-current="page" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">VIDEOJUEGOS</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">VIDEOJUEGOS</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">Survival Horror</a></li>
-                            <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">Acción y Terror</a></li>
-                            <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">Sigilo</a></li>
-                            <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">Jump Horror</a></li>
-                          </ul>
-                      </li>
-                    <li><a href="">ESPECIALES</a></li>
-                    <li><a href="pages/login.html">INICIAR SESIÓN</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navegacion_principal">
+            <div class="container-fluid nav_div ">
+                <img class="logo_principal" src="./img/logo.png" alt="Fanáticos del Terror">
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse contenedor_de_ul" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" aria-current="page" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">PELÍCULAS</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item background_dropdown"
+                                        href="./pages/peliculas.html">PELÍCULAS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item background_dropdown"
+                                        href="./pages/peliculas.html">Slasher</a></li>
+                                <li><a class="dropdown-item background_dropdown"
+                                        href="./pages/peliculas.html">Thriller</a></li>
+                                <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Terror
+                                        Psicológico</a></li>
+                                <li><a class="dropdown-item background_dropdown"
+                                        href="./pages/peliculas.html">Sobrenatural</a></li>
+                                <li><a class="dropdown-item background_dropdown" href="./pages/peliculas.html">Gore</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">LIBROS</a></li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" aria-current="page" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">VIDEOJUEGOS</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item background_dropdown"
+                                        href="./pages/videojuegos.html">VIDEOJUEGOS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item background_dropdown"
+                                        href="./pages/videojuegos.html">Survival Horror</a></li>
+                                <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">Acción
+                                        y Terror</a></li>
+                                <li><a class="dropdown-item background_dropdown"
+                                        href="./pages/videojuegos.html">Sigilo</a></li>
+                                <li><a class="dropdown-item background_dropdown" href="./pages/videojuegos.html">Jump
+                                        Horror</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">ESPECIALES</a></li>
+                        <li><a href="pages/login.html">INICIAR SESIÓN</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
+
+
         <div class="navbar navbar-light buscador">
             <div class="container-fluid col-sm-8 col-md-6 col-lg-4">
-              <form class="d-flex container">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-danger search_color" type="submit">Buscar</button>
-              </form>
+                <form class="d-flex container">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-danger search_color" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
         <section class="index_section destacado">
@@ -125,37 +153,36 @@
 
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link page_color" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="page-item hover"><a class="page-link page_color" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link page_color" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link page_color" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link page_color" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
+                    <li class="page-item">
+                        <a class="page-link page_color" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item hover"><a class="page-link page_color" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link page_color" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link page_color" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link page_color" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
                 </ul>
-              </nav>
-              
+            </nav>
+
         </section>
         <footer>
             <div>
                 <h4>¡Síguenos en nuestras redes!</h4>
                 <ul>
-                    <li><a href=""><img src="../Fanaticos del Terror+Viñales/img/iconos/facebook.png"></a></li>
-                    <li><a href=""><img src="../Fanaticos del Terror+Viñales/img/iconos/instagram.png"></a></li>
-                    <li><a href=""><img src="../Fanaticos del Terror+Viñales/img/iconos/twitter.png"></a></li>
+                    <li><a href=""><img src="../primer_repositorio/img/iconos/facebook.png"></a></li>
+                    <li><a href=""><img src="../primer_repositorio/img/iconos/instagram.png"></a></li>
+                    <li><a href=""><img src="../primer_repositorio/img/iconos/twitter.png"></a></li>
                 </ul>
             </div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-        crossorigin="anonymous">
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 </body>
 
