@@ -12,35 +12,24 @@
 a {
   text-decoration: none; }
 
-.background_juegos {
+.background_juegos, .background_peliculas, .background_login, .background_registro, .background_index {
   background-image: url(../img/background_juegos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%; }
 
-.background_index {
-  background-image: url(../img/halloween_background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 40%; }
-
 .background_peliculas {
-  background-image: url(../img/ring_back.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%; }
+  background-image: url(../img/ring_back.jpg); }
 
 .background_login {
-  background-image: url(../img/login_back.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%; }
+  background-image: url(../img/login_back.jpg); }
 
 .background_registro {
-  background-image: url(../img/registro_back.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%; }
+  background-image: url(../img/registro_back.jpg); }
+
+.background_index {
+  background-image: url(../img/halloween_background.jpg);
+  position: 40%; }
 
 .search_color {
   color: #6f0a20; }
@@ -49,7 +38,7 @@ a {
   color: black; }
 
 .page_color:hover {
-  color: white;
+  color: #ffffff;
   background-color: black;
   transition: 0.5s; }
 
@@ -63,6 +52,15 @@ a {
   grid-template-rows: 200px 40px auto 80px;
   grid-row-gap: 1em;
   grid-template-areas: "nav" "buscador" "destacado" "footer"; }
+  @media (min-width: 420px) {
+    .gridcontainer {
+      grid-template-rows: 200px 22px 40px auto 80px;
+      grid-row-gap: 2em;
+      grid-template-areas: "nav" "nav" "buscador" "destacado" "footer"; } }
+  @media (min-width: 992px) {
+    .gridcontainer {
+      grid-template-rows: 130px 130px auto 80px;
+      grid-template-areas: "nav" "buscador" "destacado" "footer"; } }
 
 .buscador {
   grid-area: buscador;
@@ -214,7 +212,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 0 0 0 0;
-  color: white;
+  color: #ffffff;
   background-color: black;
   width: 100%;
   height: 9.2em; }
@@ -350,22 +348,8 @@ footer {
   margin: 1.2em 0em 0 67.5em; }
 
 /* ---- FIN DE REGISTRO ----*/
-@media screen and (min-width: 420px) {
-  .gridcontainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 22px 40px auto 80px;
-    grid-row-gap: 2em;
-    grid-template-areas: "nav" "nav" "buscador" "destacado" "footer"; } }
-
 /* ---- Escritorio pequeño/ tablet ----*/
 @media screen and (min-width: 992px) {
-  .gridcontainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 130px 130px auto 80px;
-    grid-row-gap: 2em;
-    grid-template-areas: "nav" "buscador" "destacado" "footer"; }
   .logo_principal {
     margin: -4.5em 0 0 0; }
   .contenedor_de_ul {
@@ -375,6 +359,7 @@ footer {
   .navbar-nav {
     margin: -3.4em 0 0 0; } }
 
+/* ---- Escritorio Grande ----*/
 @media screen and (min-width: 1200px) {
   nav {
     flex-direction: row;
