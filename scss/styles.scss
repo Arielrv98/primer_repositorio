@@ -37,14 +37,18 @@ a {
     background-image: url(../img/ring_back.jpg);
 }
 
-.background_login {
-    @extend .background_juegos;
-    background-image: url(../img/login_back.jpg);
-}
-
 .background_registro {
     @extend .background_juegos;
     background-image: url(../img/registro_back.jpg);
+    background-size: auto;
+    background-position: 8%;
+}
+
+.background_login {
+    @extend .background_juegos;
+    background-image: url(../img/login_back.jpg);
+    background-size: auto;
+    background-position: 71.3%
 }
 
 .background_index {
@@ -55,6 +59,11 @@ a {
 
 .search_color {
     color: color(primary);
+}
+
+.pagination {
+    border: 0.2em solid color(primary-dark);
+    border-radius: 0.3em;
 }
 
 .page_color {
@@ -76,7 +85,7 @@ a {
 .gridcontainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 40px auto 80px;
+    grid-template-rows: 250px 40px auto 80px;
     grid-row-gap: 1em;
     grid-template-areas:
         "nav"
@@ -252,37 +261,66 @@ section {
     margin: 2em 2em 2em 2em;
 
     h2 {
-        font-size: 2em;
+        font-size: 2.2em;
         margin: 0 0 1em 0;
         color: color(primary-text);
+        font-family: 'Abel', sans-serif;
     }
 
     h3 {
-        font-size: 1.9em;
+        font-size: 2em;
         color: color(primary-text);
-        padding: 0 0 1.5em 0;
-        margin: 4em 0 0 0;
+        margin: 4em 0 2em 0;
         text-transform: uppercase;
+        font-family: 'Abel', sans-serif;;
+        background: rgba(0, 0, 0, 0.781);
+        padding: 0.5em 1em 0.5em 1em;
+        border-radius: 0.4em;
+        border: 0.1em solid color(primary-dark);
+    }
+
+    .article_principal {
+        background: rgba(0, 0, 0, 0.781);
+        border-radius: 0.8em;
+        padding: 1em 1em 1em 1em;
+        
+        p{
+            margin: 1em 1em 1em 1em;
+        }
+    }
+    
+    .article_destacado {
+        @extend .article_principal;
+        margin: 0 0 3em 0;
+        border: 0.3em solid color(primary-dark);
+        padding: 2em 2em 2em 2em;
     }
 
     article {
         padding: 0 0 6em 0;
 
         h4 {
-            font-size: 1.6em;
+            font-size: 2em;
             color: color(primary-text);
             padding: 0 0 1em 0;
+            font-family: 'Abel', sans-serif;
         }
 
         p {
-            font-size: 1em;
+            font-size: 1.5em;
             color: color(primary-text);
             padding: 0.7em 0 0.5em 0;
+            font-family: 'Abel', sans-serif;
+            font-weight: 600;
         }
 
         a {
             font-size: 1.2em;
-            color: color(primary-text);
+            color: color(primary-light);
+            &:hover{
+                color: color(primary-text);
+                transition: 0.6s;
+            }
         }
     }
 }
@@ -340,39 +378,100 @@ footer {
     margin: 4em 2em 2em 2em;
 
     h2 {
-        font-size: 2em;
+        font-size: 2.2em;
         margin: 0 0 1em 0;
         color: color(primary-text);
+        font-family: 'Abel', sans-serif;
     }
 
     h3 {
-        font-size: 1.3em;
-        color: color(primary-text);
         padding: 0 0 1.5em 0;
         margin: 0 2em 0 2em;
+        font-size: 2em;
+        color: color(primary-text);
         text-transform: uppercase;
+        font-family: 'Abel', sans-serif;
     }
 
     article {
         padding: 0 0 6em 0;
 
         h4 {
-            font-size: 1.6em;
+            font-size: 2em;
             color: color(primary-text);
             padding: 0 0 1em 0;
+            font-family: 'Abel', sans-serif;
         }
 
         p {
-            font-size: 1em;
+            font-size: 1.5em;
             color: color(primary-text);
             padding: 0.7em 0 0.5em 0;
+            font-family: 'Abel', sans-serif;
+            font-weight: 600;
         }
 
         a {
             font-size: 1.2em;
-            color: color(primary-text);
+            color: color(primary-light);
+            &:hover{
+                color: color(primary-text);
+                transition: 0.6s;
+            }
+        }
+    }
+
+    .article_principal_general {
+        background: rgba(0, 0, 0, 0.781);
+        border-radius: 0.8em;
+        padding: 1em 1em 1em 1em;
+        
+        p{
+            margin: 1em 1em 1em 1em;
+        }
+    }
+
+    .obra_destacada {
+        background: rgba(0, 0, 0, 0.781);
+        border-radius: 0.4em;
+        border: 0.1em solid color(primary-dark);
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        p {
+            padding: 1em 1em 1em 1em;
+        }
+    }
+
+    .obras_categorias {
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1em 1em 1em 1em;
+        }
+    
+        a {
             text-decoration: none;
         }
+    
+        h3 {
+            font-size: 1.6em;
+        }
+
+        background: rgba(0, 0, 0, 0.781);
+        border-radius: 0.4em;
+        border: 0.1em solid color(primary-dark);
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding: 1em 1em 1em 0em;
+    }
+
+    .article_reseñas_general {
+        @extend .article_principal_general;
+        margin: 0 0 3em 0;
+        border: 0.3em solid color(primary-dark);
     }
 }
 
@@ -392,7 +491,9 @@ footer {
 }
 
 .carrusel_control {
-    margin: -5em 0 2em 0;
+    margin: -1em 0 2em 0;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .imagenes_destacadas {
@@ -400,22 +501,7 @@ footer {
     display: none;
 }
 
-.obras_categorias {
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    h3 {
-        font-size: 1.6em;
-    }
-}
 
 
 .numero_de_pag ul {
@@ -431,93 +517,80 @@ footer {
 
 /* ---- FIN DE VIDEOJUEGOS Y PELÍCULAS ----*/
 
-/* ---- LOGIN ----*/
 
-.login {
-    text-align: center;
+/* ---- REGISTRO Y LOGIN ----*/
 
-    img {
-        width: 22%;
+
+.form_register {
+    width: 400px;
+    background: #000000;
+    opacity: 95%;
+    padding: 30px;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+
+    h4 {
+        font-size: 1.2em;
+        margin-bottom: 1.5em;
+        margin-left: 0.3em;
     }
 
-    h2 {
-        font-size: 3em;
-        margin-bottom: 0em;
-        color: color(primary-text);
+    p {
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
     }
 
     a {
-        color: color(primary-dark);
-    }
+        color: #6f0a20;
+        text-decoration: none;
 
-    h4 {
-        font-size: 1.3em;
-        color: color(primary-text);
-    }
-
-    form {
-        padding: 10em 0 10em 0;
-        display: block;
-
-        label {
-            font-size: 1.2em;
-            color: color(primary-text);
+        &:hover {
+            color: white;
+            transition: 0.6s;
         }
     }
 }
 
-/* ---- FIN DE LOGIN ----*/
+.logo_ryl {
+    margin-left: 0.9em;
+    width: 90%;
+}
 
+.input_ryl {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #595556;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
 
-/* ---- REGISTRO ----*/
+.botons_ryl {
+    width: 100%;
+    background: #6f0a20;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
 
-.registro {
-    text-align: center;
-
-    img {
-        width: 22%;
-    }
-
-    h2 {
-        font-size: 3em;
-        margin-bottom: 1em;
-        color: color(primary-text);
-    }
-
-    h3 {
-        color: color(primary-text);
-        font-size: 1.3em;
-    }
-
-    h4 {
-        font-size: 1.3em;
-        color: color(primary-text);
-    }
-
-    a {
-        color: #5b071a;
-    }
-
-    form {
-        padding: 10em 0 10em 0;
-        display: block;
-        margin: -8em 0 -2em 0;
-
-        label {
-            font-size: 1.2em;
-            color: color(primary-text);
-            display: block;
-            padding: 0.5em 0 0.5em 0;
-        }
+    &:hover {
+        background: white;
+        color: #6f0a20;
+        transition: 0.6s;
     }
 }
 
-#crear {
-    display: block;
-    margin: 1.2em 0em 0 67.5em;
-}
-
-/* ---- FIN DE REGISTRO ----*/
+/* ---- FIN DE REGISTRO Y LOGIN ----*/
 
 @media screen and (min-width: 420px) {}
 
@@ -564,41 +637,54 @@ footer {
     .index_section {
         margin: 2em 44em 2em 2em;
 
+        .article_principal {
+            margin: 1em -41em 1em 1em;
+
+            p{
+                font-size: 1.7em;
+            }
+        }
+        
+        .article_destacado {
+
+            padding: 2em 2em 2em 2em;
+            p{
+                margin: 1em 15em -0.5em 1em;
+                font-size: 1.7em;
+            }
+        }
+
         article {
             padding: 0 0 6em 0;
 
             h4 {
-                font-size: 1.6em;
-                color: color(primary-text);
                 padding: 0 0 1em 0;
                 text-align: start;
+                font-weight: 600;
             }
 
             p {
-                font-size: 1.2em;
                 color: color(primary-text);
                 padding: 0.7em 0 0.5em 0;
                 text-align: start;
             }
 
             a {
-                font-size: 1.2em;
-                color: color(primary-text);
+                margin: 1em 1em 1em -12em;
             }
         }
 
         h2 {
-            font-size: 4em;
+            font-size: 3.7em;
             color: color(primary-text);
-            margin: 0 -10em 0 0em;
             text-align: start;
+            margin-left: 0.3em;
         }
 
         h3 {
             font-size: 1.9em;
             color: color(primary-text);
-            padding: 0 0 1.5em 0;
-            margin: 4em 0 0 0;
+            margin: 4em -40em 1em -17em;
             text-transform: uppercase;
             text-align: start;
         }
@@ -621,6 +707,11 @@ footer {
             margin: 0 -18em 0 0;
             padding-left: 1em;
         }
+        
+    }
+
+    .pagination {
+        margin: 4em -40em 1em 18em;
     }
 
     /* ---- FOOTER ----*/
@@ -659,10 +750,10 @@ footer {
         margin: 2em 44em 2em 2em;
 
         h2 {
-            font-size: 4em;
+            font-size: 3.7em;
             color: color(primary-text);
-            margin: 0 -10em 0 0em;
             text-align: start;
+            margin-left: 0.3em;
         }
 
         h3 {
@@ -677,25 +768,82 @@ footer {
             padding: 0 0 6em 0;
 
             h4 {
-                font-size: 1.6em;
-                color: color(primary-text);
                 padding: 0 0 1em 0;
                 text-align: start;
+                font-weight: 600;
             }
 
             p {
-                font-size: 1.2em;
                 color: color(primary-text);
                 padding: 0.7em 0 0.5em 0;
                 text-align: start;
             }
 
-            a {
-                font-size: 1.2em;
-                color: color(primary-text);
+            .ver_mas {
+                margin: 1em 1em 1em -12em;
             }
         }
-    }
+
+        .article_principal_general {
+
+            margin: 1em -41em 1em 1em;
+
+            p{
+                font-size: 1.7em;
+            }
+        }
+
+        .article_reseñas_general {
+            p{
+                margin: 1em 15em -0.5em 1em;
+                font-size: 1.7em;
+            }
+        }
+
+        .obra_destacada {
+            margin: 0 -41em 0 1em;
+
+            .titulo_destacado_obra {
+                margin: 1em 1em 1em -1.2em;
+            }
+
+        }
+
+        .ver_mas_destacado {
+            margin: 0 0 0 61em;
+        }
+
+        .obras_categorias {
+            padding: 1em 1em 1em 1em;
+            margin: 1em -32em 1em 8em;
+
+            div {
+                
+            }
+            
+            h3 {
+                margin-left: 12.8em;
+            }
+
+            h4 {
+                margin-left: 11.3em;
+            }
+
+            ul {
+                padding: 1em 1em 1em 1em;
+            }
+        }
+
+        .categorias_peliculas {
+            h3 {
+                margin-left: 11em;
+            }
+
+            h4 {
+                margin-left: 9.8em;
+            }
+        }
+    }        
 
     .parrafo_principal_general {
         text-align: start;
@@ -717,8 +865,8 @@ footer {
     .imagenes_destacadas {
         display: flex;
         flex-direction: row;
-        max-width: 78%;
-        margin: 0 2em 0 -2em;
+        max-width: 44.7%;
+        margin: 0 1em 0 2em;
         justify-content: flex-start;
         padding: 0 0 0 0;
 
@@ -732,10 +880,6 @@ footer {
         margin-left: 1em;
     }
 
-    .obras_categorias h3 {
-        margin-left: -0.6em;
-    }
 
     /* ---- FIN DE VIDEOJUEGOS Y PELÍCULAS ----*/
-
 }

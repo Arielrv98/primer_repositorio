@@ -12,7 +12,7 @@
 a {
   text-decoration: none; }
 
-.background_juegos, .background_peliculas, .background_login, .background_registro, .background_index {
+.background_juegos, .background_peliculas, .background_registro, .background_login, .background_index {
   background-image: url(../img/background_juegos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,11 +21,15 @@ a {
 .background_peliculas {
   background-image: url(../img/ring_back.jpg); }
 
-.background_login {
-  background-image: url(../img/login_back.jpg); }
-
 .background_registro {
-  background-image: url(../img/registro_back.jpg); }
+  background-image: url(../img/registro_back.jpg);
+  background-size: auto;
+  background-position: 8%; }
+
+.background_login {
+  background-image: url(../img/login_back.jpg);
+  background-size: auto;
+  background-position: 71.3%; }
 
 .background_index {
   background-image: url(../img/halloween_background.jpg);
@@ -33,6 +37,10 @@ a {
 
 .search_color {
   color: #6f0a20; }
+
+.pagination {
+  border: 0.2em solid #430714;
+  border-radius: 0.3em; }
 
 .page_color {
   color: black; }
@@ -49,7 +57,7 @@ a {
 .gridcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 200px 40px auto 80px;
+  grid-template-rows: 250px 40px auto 80px;
   grid-row-gap: 1em;
   grid-template-areas: "nav" "buscador" "destacado" "footer"; }
   @media (min-width: 420px) {
@@ -173,28 +181,49 @@ section {
 .index_section {
   margin: 2em 2em 2em 2em; }
   .index_section h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin: 0 0 1em 0;
-    color: #ffffff; }
-  .index_section h3 {
-    font-size: 1.9em;
     color: #ffffff;
-    padding: 0 0 1.5em 0;
-    margin: 4em 0 0 0;
-    text-transform: uppercase; }
+    font-family: 'Abel', sans-serif; }
+  .index_section h3 {
+    font-size: 2em;
+    color: #ffffff;
+    margin: 4em 0 2em 0;
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+    background: rgba(0, 0, 0, 0.781);
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.4em;
+    border: 0.1em solid #430714; }
+  .index_section .article_principal, .index_section .article_destacado {
+    background: rgba(0, 0, 0, 0.781);
+    border-radius: 0.8em;
+    padding: 1em 1em 1em 1em; }
+    .index_section .article_principal p, .index_section .article_destacado p {
+      margin: 1em 1em 1em 1em; }
+  .index_section .article_destacado {
+    margin: 0 0 3em 0;
+    border: 0.3em solid #430714;
+    padding: 2em 2em 2em 2em; }
   .index_section article {
     padding: 0 0 6em 0; }
     .index_section article h4 {
-      font-size: 1.6em;
+      font-size: 2em;
       color: #ffffff;
-      padding: 0 0 1em 0; }
+      padding: 0 0 1em 0;
+      font-family: 'Abel', sans-serif; }
     .index_section article p {
-      font-size: 1em;
+      font-size: 1.5em;
       color: #ffffff;
-      padding: 0.7em 0 0.5em 0; }
+      padding: 0.7em 0 0.5em 0;
+      font-family: 'Abel', sans-serif;
+      font-weight: 600; }
     .index_section article a {
       font-size: 1.2em;
-      color: #ffffff; }
+      color: #87162e; }
+      .index_section article a:hover {
+        color: #ffffff;
+        transition: 0.6s; }
 
 .numero_de_pag ul {
   display: flex; }
@@ -233,29 +262,69 @@ footer {
 .seccion_general {
   margin: 4em 2em 2em 2em; }
   .seccion_general h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin: 0 0 1em 0;
-    color: #ffffff; }
-  .seccion_general h3 {
-    font-size: 1.3em;
     color: #ffffff;
+    font-family: 'Abel', sans-serif; }
+  .seccion_general h3 {
     padding: 0 0 1.5em 0;
     margin: 0 2em 0 2em;
-    text-transform: uppercase; }
+    font-size: 2em;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif; }
   .seccion_general article {
     padding: 0 0 6em 0; }
     .seccion_general article h4 {
-      font-size: 1.6em;
+      font-size: 2em;
       color: #ffffff;
-      padding: 0 0 1em 0; }
+      padding: 0 0 1em 0;
+      font-family: 'Abel', sans-serif; }
     .seccion_general article p {
-      font-size: 1em;
+      font-size: 1.5em;
       color: #ffffff;
-      padding: 0.7em 0 0.5em 0; }
+      padding: 0.7em 0 0.5em 0;
+      font-family: 'Abel', sans-serif;
+      font-weight: 600; }
     .seccion_general article a {
       font-size: 1.2em;
-      color: #ffffff;
+      color: #87162e; }
+      .seccion_general article a:hover {
+        color: #ffffff;
+        transition: 0.6s; }
+  .seccion_general .article_principal_general, .seccion_general .article_reseñas_general {
+    background: rgba(0, 0, 0, 0.781);
+    border-radius: 0.8em;
+    padding: 1em 1em 1em 1em; }
+    .seccion_general .article_principal_general p, .seccion_general .article_reseñas_general p {
+      margin: 1em 1em 1em 1em; }
+  .seccion_general .obra_destacada {
+    background: rgba(0, 0, 0, 0.781);
+    border-radius: 0.4em;
+    border: 0.1em solid #430714;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+    .seccion_general .obra_destacada p {
+      padding: 1em 1em 1em 1em; }
+  .seccion_general .obras_categorias {
+    background: rgba(0, 0, 0, 0.781);
+    border-radius: 0.4em;
+    border: 0.1em solid #430714;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em 1em 1em 0em; }
+    .seccion_general .obras_categorias ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1em 1em 1em 1em; }
+    .seccion_general .obras_categorias a {
       text-decoration: none; }
+    .seccion_general .obras_categorias h3 {
+      font-size: 1.6em; }
+  .seccion_general .article_reseñas_general {
+    margin: 0 0 3em 0;
+    border: 0.3em solid #430714; }
 
 .titulo_destacado_obra {
   margin: 2em -2em 0 -5.2em; }
@@ -269,21 +338,12 @@ footer {
   animation: infinite; }
 
 .carrusel_control {
-  margin: -5em 0 2em 0; }
+  margin: -1em 0 2em 0;
+  padding-left: 2em;
+  padding-right: 2em; }
 
 .imagenes_destacadas {
   display: none; }
-
-.obras_categorias ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
-
-.obras_categorias a {
-  text-decoration: none; }
-
-.obras_categorias h3 {
-  font-size: 1.6em; }
 
 .numero_de_pag ul {
   display: flex; }
@@ -294,60 +354,63 @@ footer {
     padding-left: 0.8em; }
 
 /* ---- FIN DE VIDEOJUEGOS Y PELÍCULAS ----*/
-/* ---- LOGIN ----*/
-.login {
-  text-align: center; }
-  .login img {
-    width: 22%; }
-  .login h2 {
-    font-size: 3em;
-    margin-bottom: 0em;
-    color: #ffffff; }
-  .login a {
-    color: #430714; }
-  .login h4 {
-    font-size: 1.3em;
-    color: #ffffff; }
-  .login form {
-    padding: 10em 0 10em 0;
-    display: block; }
-    .login form label {
-      font-size: 1.2em;
-      color: #ffffff; }
+/* ---- REGISTRO Y LOGIN ----*/
+.form_register {
+  width: 400px;
+  background: #000000;
+  opacity: 95%;
+  padding: 30px;
+  margin: auto;
+  margin-top: 3em;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000; }
+  .form_register h4 {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    margin-left: 0.3em; }
+  .form_register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px; }
+  .form_register a {
+    color: #6f0a20;
+    text-decoration: none; }
+    .form_register a:hover {
+      color: white;
+      transition: 0.6s; }
 
-/* ---- FIN DE LOGIN ----*/
-/* ---- REGISTRO ----*/
-.registro {
-  text-align: center; }
-  .registro img {
-    width: 22%; }
-  .registro h2 {
-    font-size: 3em;
-    margin-bottom: 1em;
-    color: #ffffff; }
-  .registro h3 {
-    color: #ffffff;
-    font-size: 1.3em; }
-  .registro h4 {
-    font-size: 1.3em;
-    color: #ffffff; }
-  .registro a {
-    color: #5b071a; }
-  .registro form {
-    padding: 10em 0 10em 0;
-    display: block;
-    margin: -8em 0 -2em 0; }
-    .registro form label {
-      font-size: 1.2em;
-      color: #ffffff;
-      display: block;
-      padding: 0.5em 0 0.5em 0; }
+.logo_ryl {
+  margin-left: 0.9em;
+  width: 90%; }
 
-#crear {
-  display: block;
-  margin: 1.2em 0em 0 67.5em; }
+.input_ryl {
+  width: 100%;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #595556;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black; }
 
-/* ---- FIN DE REGISTRO ----*/
+.botons_ryl {
+  width: 100%;
+  background: #6f0a20;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px; }
+  .botons_ryl:hover {
+    background: white;
+    color: #6f0a20;
+    transition: 0.6s; }
+
+/* ---- FIN DE REGISTRO Y LOGIN ----*/
 /* ---- Escritorio pequeño/ tablet ----*/
 @media screen and (min-width: 992px) {
   .logo_principal {
@@ -372,31 +435,36 @@ footer {
   /* ---- MAIN ----*/
   .index_section {
     margin: 2em 44em 2em 2em; }
+    .index_section .article_principal, .index_section .article_destacado {
+      margin: 1em -41em 1em 1em; }
+      .index_section .article_principal p, .index_section .article_destacado p {
+        font-size: 1.7em; }
+    .index_section .article_destacado {
+      padding: 2em 2em 2em 2em; }
+      .index_section .article_destacado p {
+        margin: 1em 15em -0.5em 1em;
+        font-size: 1.7em; }
     .index_section article {
       padding: 0 0 6em 0; }
       .index_section article h4 {
-        font-size: 1.6em;
-        color: #ffffff;
         padding: 0 0 1em 0;
-        text-align: start; }
+        text-align: start;
+        font-weight: 600; }
       .index_section article p {
-        font-size: 1.2em;
         color: #ffffff;
         padding: 0.7em 0 0.5em 0;
         text-align: start; }
       .index_section article a {
-        font-size: 1.2em;
-        color: #ffffff; }
+        margin: 1em 1em 1em -12em; }
     .index_section h2 {
-      font-size: 4em;
+      font-size: 3.7em;
       color: #ffffff;
-      margin: 0 -10em 0 0em;
-      text-align: start; }
+      text-align: start;
+      margin-left: 0.3em; }
     .index_section h3 {
       font-size: 1.9em;
       color: #ffffff;
-      padding: 0 0 1.5em 0;
-      margin: 4em 0 0 0;
+      margin: 4em -40em 1em -17em;
       text-transform: uppercase;
       text-align: start; }
   .parrafo_principal {
@@ -410,6 +478,8 @@ footer {
     .obras_generales a {
       margin: 0 -18em 0 0;
       padding-left: 1em; }
+  .pagination {
+    margin: 4em -40em 1em 18em; }
   /* ---- FOOTER ----*/
   footer {
     padding: 1em;
@@ -433,10 +503,10 @@ footer {
   .seccion_general {
     margin: 2em 44em 2em 2em; }
     .seccion_general h2 {
-      font-size: 4em;
+      font-size: 3.7em;
       color: #ffffff;
-      margin: 0 -10em 0 0em;
-      text-align: start; }
+      text-align: start;
+      margin-left: 0.3em; }
     .seccion_general h3 {
       font-size: 1.9em;
       color: #ffffff;
@@ -446,18 +516,41 @@ footer {
     .seccion_general article {
       padding: 0 0 6em 0; }
       .seccion_general article h4 {
-        font-size: 1.6em;
-        color: #ffffff;
         padding: 0 0 1em 0;
-        text-align: start; }
+        text-align: start;
+        font-weight: 600; }
       .seccion_general article p {
-        font-size: 1.2em;
         color: #ffffff;
         padding: 0.7em 0 0.5em 0;
         text-align: start; }
-      .seccion_general article a {
-        font-size: 1.2em;
-        color: #ffffff; }
+      .seccion_general article .ver_mas {
+        margin: 1em 1em 1em -12em; }
+    .seccion_general .article_principal_general, .seccion_general .article_reseñas_general {
+      margin: 1em -41em 1em 1em; }
+      .seccion_general .article_principal_general p, .seccion_general .article_reseñas_general p {
+        font-size: 1.7em; }
+    .seccion_general .article_reseñas_general p {
+      margin: 1em 15em -0.5em 1em;
+      font-size: 1.7em; }
+    .seccion_general .obra_destacada {
+      margin: 0 -41em 0 1em; }
+      .seccion_general .obra_destacada .titulo_destacado_obra {
+        margin: 1em 1em 1em -1.2em; }
+    .seccion_general .ver_mas_destacado {
+      margin: 0 0 0 61em; }
+    .seccion_general .obras_categorias {
+      padding: 1em 1em 1em 1em;
+      margin: 1em -32em 1em 8em; }
+      .seccion_general .obras_categorias h3 {
+        margin-left: 12.8em; }
+      .seccion_general .obras_categorias h4 {
+        margin-left: 11.3em; }
+      .seccion_general .obras_categorias ul {
+        padding: 1em 1em 1em 1em; }
+    .seccion_general .categorias_peliculas h3 {
+      margin-left: 11em; }
+    .seccion_general .categorias_peliculas h4 {
+      margin-left: 9.8em; }
   .parrafo_principal_general {
     text-align: start; }
   .obra_destacada {
@@ -469,8 +562,8 @@ footer {
   .imagenes_destacadas {
     display: flex;
     flex-direction: row;
-    max-width: 78%;
-    margin: 0 2em 0 -2em;
+    max-width: 44.7%;
+    margin: 0 1em 0 2em;
     justify-content: flex-start;
     padding: 0 0 0 0; }
     .imagenes_destacadas img {
@@ -478,6 +571,4 @@ footer {
       padding-bottom: 0.5em; }
   .imagenes_destacadas_2 {
     margin-left: 1em; }
-  .obras_categorias h3 {
-    margin-left: -0.6em; }
   /* ---- FIN DE VIDEOJUEGOS Y PELÍCULAS ----*/ }

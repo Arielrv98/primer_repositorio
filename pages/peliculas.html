@@ -10,10 +10,14 @@
     horror, reseñas de películas, reviews de videojuegos, top mejores videojuegos de terror, top mejores
     películas de terror">
     <title>Películas de Terror</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" href="../img/iconos/fdt_icono.ico">
 </head>
 
 <body class="background_peliculas">
@@ -21,7 +25,7 @@
         
         <nav class="navbar navbar-expand-lg navegacion_principal">
             <div class="container-fluid nav_div ">
-                <img class="logo_principal" src="../img/logo.png" alt="Fanáticos del Terror">
+                <img class="logo_principal" src="../img/logo.png" alt="Fanáticos del Terror Logo">
                 <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
                     type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,7 +95,7 @@
         </div>
 
         <section class="seccion_general">
-            <article>
+            <article class="article_principal_general">
                 <h2>Películas que todo fanático debe ver</h2>
                 <p class="parrafo_principal_general"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
@@ -113,33 +117,46 @@
                     <h3>PELÍCULA DESTACADA:</h3>
                     <div>
                         <h3>El Exorcista - 9.8</h3>
-                        <img class="animate__animated animate__pulse animacion_liston" src="../img/iconos/destacado.png">
+                        <img class="animate__animated animate__pulse animacion_liston" src="../img/iconos/destacado.png" alt="Dibujo de listón">
                     </div>
                 </div>
                 <div class="imagenes_destacadas">
-                    <img class="imagenes_destacadas_1" src="../img/exorcista_1.jpg">
-                    <img class="imagenes_destacadas_2" src="../img/exorcista_2.jpg">
+                    <img class="imagenes_destacadas_1" src="../img/exorcista_1.jpg" alt="Portada de la película El Exorcista">
+                    <img class="imagenes_destacadas_2" src="../img/exorcista_2.jpg" alt="Portada de la película El Exorcista">
+                </div>
+                <div id="carouselExampleControlsNoTouching" class="carousel slide carrusel_control" data-bs-touch="false" data-bs-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../img/exorcista_1.jpg" alt="Portada de la película El Exorcista" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/exorcista_2.jpg" alt="Portada de la película El Exorcista" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="parrafo_destacado_general">
+                    <p> Adaptación de la novela de William Peter Blatty que se inspiró en un 
+                        exorcismo real ocurrido en Washington en 1949. Regan, una niña de doce 
+                        años, es víctima de fenómenos paranormales como la levitación o la 
+                        manifestación de una fuerza sobrehumana. Su madre, aterrorizada, tras 
+                        someter a su hija a múltiples análisis médicos que no ofrecen ningún 
+                        resultado, acude a un sacerdote con estudios de psiquiatría. Éste, 
+                        convencido de que el mal no es físico sino espiritual, es decir que 
+                        se trata de una posesión diabólica, decide practicar un exorcismo. 
+                        Seguramente la película de terror más popular de todos los tiempos. </p>
+                    <a href="" class="ver_mas_destacado">Ver más →</a>
                 </div>
             </article>
-            <div id="carouselExampleControlsNoTouching" class="carousel slide carrusel_control" data-bs-touch="false" data-bs-interval="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../img/exorcista_1.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/exorcista_2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            <article class="obras_categorias">
+            
+            <article class="obras_categorias categorias_peliculas">
                 <h3>Todas las reseñas</h3>
                 <h4>Categorías:</h4>
                 <ul>
@@ -150,49 +167,44 @@
                     <li><a href="">/ Gore /</a></li>
                 </ul>
             </article>
-            <article>
+            <article class="article_reseñas_general">
                 <h4>Alien: El octavo pasajero</h4>
                 <div class="obras_generales">
-                    <img src="../img/alien.jpg">
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
-                        expedita reiciendis cumque quia iste, omnis eveniet neque! Ullam
-                        voluptate neque quae suscipit necessitatibus?Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Voluptas aspernatur obcaecati
-                        consequatur voluptatibus autem perspiciatis totam soluta nisi
-                        molestias assumenda, excepturi numquam magnam sapiente. Placeat
-                        ducimus sunt voluptatem libero omnis! </p>
-                    <a href="">Ver más</a>
+                    <img src="../img/alien.jpg" alt="Portada de la película Alien">
+                    <p> De regreso a la Tierra, la nave de carga Nostromo interrumpe su viaje y 
+                        despierta a sus siete tripulantes. El ordenador central, MADRE, ha 
+                        detectado la misteriosa transmisión de una forma de vida desconocida, 
+                        procedente de un planeta cercano aparentemente deshabitado. La nave 
+                        se dirige entonces al extraño planeta para investigar el origen de la 
+                        comunicación </p>
+                    <a href="" class="ver_mas">Ver más →</a>
                 </div>
             </article>
-            <article>
+            <article class="article_reseñas_general">
                 <h4>Scream</h4>
                 <div class="obras_generales">
-                    <img src="../img/scream.jpg">
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
-                        expedita reiciendis cumque quia iste, omnis eveniet neque! Ullam
-                        voluptate neque quae suscipit necessitatibus?Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Voluptas aspernatur obcaecati
-                        consequatur voluptatibus autem perspiciatis totam soluta nisi
-                        molestias assumenda, excepturi numquam magnam sapiente. Placeat
-                        ducimus sunt voluptatem libero omnis! </p>
-                    <a href="">Ver más</a>
+                    <img src="../img/scream.jpg" alt="Portada de la película Scream">
+                    <p> Un año después del asesinato de su madre, una adolescente es aterrorizada por un nuevo asesino,
+                        que tiene como objetivo a la chica y a sus amigos utilizando las películas de terror como parte
+                        de un juego mortal. Ahora nadie está a salvo... y todo el mundo es sospechoso. Resolver este misterio 
+                        va a resultar mortal.
+                        Scream es una película de terror slasher de 1996 escrita por Kevin Williamson y dirigida por Wes Craven, 
+                        y fue filmada mayormente en Santa Rosa (California). <br>
+                        La película está protagonizada por un elenco conformado por Neve Campbell, 
+                        David Arquette y Courteney Cox! </p>
+                    <a href="" class="ver_mas">Ver más →</a>
                 </div>
             </article>
-            <article>
+            <article class="article_reseñas_general">
                 <h4>Viernes 13 parte IV: El último capítulo</h4>
                 <div class="obras_generales">
-                    <img src="../img/viernes_13_parte_4.jpg">
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Possimus nesciunt eum, dignissimos dolor nobis, cum repellat
-                        expedita reiciendis cumque quia iste, omnis eveniet neque! Ullam
-                        voluptate neque quae suscipit necessitatibus?Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Voluptas aspernatur obcaecati
-                        consequatur voluptatibus autem perspiciatis totam soluta nisi
-                        molestias assumenda, excepturi numquam magnam sapiente. Placeat
-                        ducimus sunt voluptatem libero omnis! </p>
-                    <a href="">Ver más</a>
+                    <img src="../img/viernes_13_parte_4.jpg" alt="Portada de la película Viernes 13 parte 4">
+                    <p> Jasón, el más impopular de los habitantes de Cristal Lake, regresa para causar mayores 
+                        estragos en esta parte. Tras su resurgimiento en el depósito de cadáveres de un hospital, 
+                        el asesino enmascarado centra su venganza en la familia Jarvis y en un grupo de despreocupados 
+                        adolescentes. El joven Tommy Jarvis es un gran aficionado al cine de terror con un talento 
+                        especial para las máscaras y el maquillaje. </p>
+                    <a href="" class="ver_mas">Ver más →</a>
                 </div>
             </article>
             <nav aria-label="Page navigation example">
@@ -217,9 +229,9 @@
             <div>
                 <h4>¡Síguenos en nuestras redes!</h4>
                 <ul>
-                    <li><a href=""><img src="../img/iconos/facebook.png"></a></li>
-                    <li><a href=""><img src="../img/iconos/instagram.png"></a></li>
-                    <li><a href=""><img src="../img/iconos/twitter.png"></a></li>
+                    <li><a href=""><img src="../img/iconos/facebook.png" alt="Logo de Facebook"></a></li>
+                    <li><a href=""><img src="../img/iconos/instagram.png" alt="Logo de Instagram"></a></li>
+                    <li><a href=""><img src="../img/iconos/twitter.png" alt="Logo de Twitter"></a></li>
                 </ul>
             </div>
         </footer>
