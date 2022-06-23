@@ -259,7 +259,7 @@ section {
 }
 
 .index_section {
-    margin: 2em 2em 2em 2em;
+    margin: 2em 0.5em 2em 0.5em;
 
     h2 {
         font-size: 2.2em;
@@ -383,7 +383,7 @@ footer {
 /* ---- MAIN ----*/
 
 .seccion_general {
-    margin: 4em 2em 2em 2em;
+    margin: 4em 0.5em 2em 0.5em;
 
     h2 {
         font-size: 2.2em;
@@ -474,6 +474,11 @@ footer {
         p {
             padding: 1em 1em 1em 1em;
         }
+
+        h3 {
+            margin: 0 0 0 2em;
+            font-size: 1.6em;
+        }
     }
 
     .obras_categorias {
@@ -555,7 +560,7 @@ footer {
 
 
 .form_register {
-    width: 400px;
+    width: 322px;
     background: #000000;
     opacity: 95%;
     padding: 30px;
@@ -576,7 +581,7 @@ footer {
     p {
         height: 40px;
         text-align: center;
-        font-size: 18px;
+        font-size: 17px;
         line-height: 40px;
     }
 
@@ -588,6 +593,23 @@ footer {
             color: white;
             transition: 0.6s;
         }
+    }
+
+    .volver_inicio {
+
+        a {
+            font-size: 1.2em;
+        color: color(primary-text);
+        background: color(primary-dark);
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 0.3em;
+        &:hover{
+            color: color(primary-light);
+            background: color(primary-text);
+            transition: 1s;
+        }
+        }
+        
     }
 }
 
@@ -645,6 +667,21 @@ footer {
     .navbar-nav {
         margin: -3.4em 0 0 0;
     }
+
+    /* ---- REGISTRO Y LOGIN ----*/
+
+    .form_register {
+        width: 400px;
+
+        p {
+          font-size: 18px;  
+        }
+
+    }
+
+    /* ---- FIN REGISTRO Y LOGIN ----*/
+    
+    
 
 }
 
@@ -839,6 +876,10 @@ footer {
 
             .titulo_destacado_obra {
                 margin: 1em 1em 1em -1.2em;
+            }
+
+            h3 {
+                font-size: 2em;
             }
 
         }

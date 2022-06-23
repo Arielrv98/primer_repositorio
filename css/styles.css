@@ -179,7 +179,7 @@ section {
   text-align: center; }
 
 .index_section {
-  margin: 2em 2em 2em 2em; }
+  margin: 2em 0.5em 2em 0.5em; }
   .index_section h2 {
     font-size: 2.2em;
     margin: 0 0 1em 0;
@@ -265,7 +265,7 @@ footer {
 /* ---- VIDEOJUEGOS Y PELÍCULAS ----*/
 /* ---- MAIN ----*/
 .seccion_general {
-  margin: 4em 2em 2em 2em; }
+  margin: 4em 0.5em 2em 0.5em; }
   .seccion_general h2 {
     font-size: 2.2em;
     margin: 0 0 1em 0;
@@ -329,6 +329,9 @@ footer {
     margin-bottom: 1em; }
     .seccion_general .obra_destacada p {
       padding: 1em 1em 1em 1em; }
+    .seccion_general .obra_destacada h3 {
+      margin: 0 0 0 2em;
+      font-size: 1.6em; }
   .seccion_general .obras_categorias {
     background: rgba(0, 0, 0, 0.781);
     border-radius: 0.4em;
@@ -379,7 +382,7 @@ footer {
 /* ---- FIN DE VIDEOJUEGOS Y PELÍCULAS ----*/
 /* ---- REGISTRO Y LOGIN ----*/
 .form_register {
-  width: 400px;
+  width: 322px;
   background: #000000;
   opacity: 95%;
   padding: 30px;
@@ -397,7 +400,7 @@ footer {
   .form_register p {
     height: 40px;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 40px; }
   .form_register a {
     color: #6f0a20;
@@ -405,6 +408,16 @@ footer {
     .form_register a:hover {
       color: white;
       transition: 0.6s; }
+  .form_register .volver_inicio a {
+    font-size: 1.2em;
+    color: #ffffff;
+    background: #430714;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border-radius: 0.3em; }
+    .form_register .volver_inicio a:hover {
+      color: #87162e;
+      background: #ffffff;
+      transition: 1s; }
 
 .logo_ryl {
   margin-left: 0.9em;
@@ -444,7 +457,13 @@ footer {
     justify-content: flex-end;
     margin: 0 1em 0 0; }
   .navbar-nav {
-    margin: -3.4em 0 0 0; } }
+    margin: -3.4em 0 0 0; }
+  /* ---- REGISTRO Y LOGIN ----*/
+  .form_register {
+    width: 400px; }
+    .form_register p {
+      font-size: 18px; }
+  /* ---- FIN REGISTRO Y LOGIN ----*/ }
 
 /* ---- Escritorio Grande ----*/
 @media screen and (min-width: 1200px) {
@@ -560,6 +579,8 @@ footer {
       margin: 0 -41em 0 1em; }
       .seccion_general .obra_destacada .titulo_destacado_obra {
         margin: 1em 1em 1em -1.2em; }
+      .seccion_general .obra_destacada h3 {
+        font-size: 2em; }
     .seccion_general .ver_mas_destacado {
       margin: 0 0 0 61em; }
     .seccion_general .obras_categorias {
