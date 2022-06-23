@@ -161,6 +161,7 @@ nav {
             padding-left: 1em;
             text-transform: uppercase;
             text-decoration: none;
+            
 
             &:hover {
                 color: map-get($colors, hover);
@@ -293,7 +294,6 @@ section {
         @extend .article_principal;
         margin: 0 0 3em 0;
         border: 0.3em solid color(primary-dark);
-        padding: 2em 2em 2em 2em;
     }
 
     article {
@@ -316,10 +316,14 @@ section {
 
         a {
             font-size: 1.2em;
-            color: color(primary-light);
+            color: color(primary-text);
+            background: color(primary-dark);
+            padding: 0.5em 0.5em 0.5em 0.5em;
+            border-radius: 0.3em;
             &:hover{
-                color: color(primary-text);
-                transition: 0.6s;
+                color: color(primary-light);
+                background: color(primary-text);
+                transition: 1s;
             }
         }
     }
@@ -365,6 +369,10 @@ footer {
         color: color(primary);
         text-align: center;
         margin: 0.3em 1em;
+    }
+
+    div {
+        background-color: rgb(0, 0, 0);
     }
 }
 
@@ -419,6 +427,31 @@ footer {
                 transition: 0.6s;
             }
         }
+
+        .ver_mas {
+            color: color(primary-text);
+            background: color(primary-dark);
+            padding: 0.5em 0.5em 0.5em 0.5em;
+            border-radius: 0.3em;
+            &:hover{
+                color: color(primary-light);
+                background: color(primary-text);
+                transition: 1s;
+            } 
+        }
+
+        .ver_mas_destacado {
+            color: color(primary-text);
+            background: color(primary-dark);
+            padding: 0.5em 0.5em 0.5em 0.5em;
+            border-radius: 0.3em;
+            &:hover{
+                color: color(primary-light);
+                background: color(primary-text);
+                transition: 1s;
+            } 
+        }
+        
     }
 
     .article_principal_general {
@@ -528,6 +561,7 @@ footer {
     padding: 30px;
     margin: auto;
     margin-top: 3em;
+    padding: 1em 1em 1em 1em;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;

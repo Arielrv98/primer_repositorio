@@ -203,8 +203,7 @@ section {
       margin: 1em 1em 1em 1em; }
   .index_section .article_destacado {
     margin: 0 0 3em 0;
-    border: 0.3em solid #430714;
-    padding: 2em 2em 2em 2em; }
+    border: 0.3em solid #430714; }
   .index_section article {
     padding: 0 0 6em 0; }
     .index_section article h4 {
@@ -220,10 +219,14 @@ section {
       font-weight: 600; }
     .index_section article a {
       font-size: 1.2em;
-      color: #87162e; }
+      color: #ffffff;
+      background: #430714;
+      padding: 0.5em 0.5em 0.5em 0.5em;
+      border-radius: 0.3em; }
       .index_section article a:hover {
-        color: #ffffff;
-        transition: 0.6s; }
+        color: #87162e;
+        background: #ffffff;
+        transition: 1s; }
 
 .numero_de_pag ul {
   display: flex; }
@@ -255,6 +258,8 @@ footer {
     color: #6f0a20;
     text-align: center;
     margin: 0.3em 1em; }
+  footer div {
+    background-color: black; }
 
 /* ---- FIN FOOTER ----*/
 /* ---- VIDEOJUEGOS Y PELÍCULAS ----*/
@@ -292,6 +297,24 @@ footer {
       .seccion_general article a:hover {
         color: #ffffff;
         transition: 0.6s; }
+    .seccion_general article .ver_mas {
+      color: #ffffff;
+      background: #430714;
+      padding: 0.5em 0.5em 0.5em 0.5em;
+      border-radius: 0.3em; }
+      .seccion_general article .ver_mas:hover {
+        color: #87162e;
+        background: #ffffff;
+        transition: 1s; }
+    .seccion_general article .ver_mas_destacado {
+      color: #ffffff;
+      background: #430714;
+      padding: 0.5em 0.5em 0.5em 0.5em;
+      border-radius: 0.3em; }
+      .seccion_general article .ver_mas_destacado:hover {
+        color: #87162e;
+        background: #ffffff;
+        transition: 1s; }
   .seccion_general .article_principal_general, .seccion_general .article_reseñas_general {
     background: rgba(0, 0, 0, 0.781);
     border-radius: 0.8em;
@@ -362,6 +385,7 @@ footer {
   padding: 30px;
   margin: auto;
   margin-top: 3em;
+  padding: 1em 1em 1em 1em;
   border-radius: 4px;
   font-family: 'calibri';
   color: white;
