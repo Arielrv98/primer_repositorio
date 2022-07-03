@@ -35,20 +35,18 @@ a {
   background-image: url(../img/halloween_background.jpg);
   position: 40%; }
 
-.search_color {
-  color: #6f0a20; }
-
 .pagination {
   border: 0.2em solid #430714;
   border-radius: 0.3em; }
 
 .page_color {
-  color: black; }
+  color: black;
+  transition: 0.5s ease; }
 
 .page_color:hover {
   color: #ffffff;
   background-color: black;
-  transition: 0.5s; }
+  transition: 0.5s ease; }
 
 .background_dropdown:hover {
   background-color: black; }
@@ -57,7 +55,7 @@ a {
 .gridcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 250px 40px auto 80px;
+  grid-template-rows: 250px auto auto 80px;
   grid-row-gap: 1em;
   grid-template-areas: "nav" "buscador" "destacado" "footer"; }
   @media (min-width: 420px) {
@@ -70,10 +68,22 @@ a {
       grid-template-rows: 130px 130px auto 80px;
       grid-template-areas: "nav" "buscador" "destacado" "footer"; } }
 
+/* ---- BUSCADOR ----*/
 .buscador {
-  grid-area: buscador;
-  z-index: -1; }
+  grid-area: buscador; }
+  .buscador .search_color {
+    color: #ffffff;
+    background-color: #430714;
+    transition: 0.8s ease; }
+    .buscador .search_color:hover {
+      color: #430714;
+      background-color: #ffffff;
+      transition: 0.8s ease; }
+  .buscador .search_imput:focus {
+    border-color: #6f0a20;
+    box-shadow: 0 0 0 0.25rem #43071424; }
 
+/* ---- FIN BUSCADOR ----*/
 /* ---- NAV ----*/
 nav {
   grid-area: nav;
@@ -105,10 +115,11 @@ nav {
       font-size: 1.2em;
       padding-left: 1em;
       text-transform: uppercase;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: 1s ease; }
       .navegacion_principal ul li a:hover {
         color: #ffffff;
-        transition: 1s; }
+        transition: 1s ease; }
 
 /* ---- HAMBURGUESA ----*/
 .navbar-toggler {
@@ -222,11 +233,12 @@ section {
       color: #ffffff;
       background: #430714;
       padding: 0.5em 0.5em 0.5em 0.5em;
-      border-radius: 0.3em; }
+      border-radius: 0.3em;
+      transition: 1s ease; }
       .index_section article a:hover {
         color: #87162e;
         background: #ffffff;
-        transition: 1s; }
+        transition: 1s ease; }
 
 .numero_de_pag ul {
   display: flex; }
@@ -253,6 +265,11 @@ footer {
     justify-content: space-evenly; }
     footer ul li {
       margin-bottom: 0.5em; }
+      footer ul li a {
+        transition: 1.5s ease; }
+        footer ul li a img:hover {
+          width: 99%;
+          transition: 1.5s ease; }
   footer h4 {
     font-size: 1.8em;
     color: #6f0a20;
@@ -293,28 +310,31 @@ footer {
       font-weight: 600; }
     .seccion_general article a {
       font-size: 1.2em;
-      color: #87162e; }
+      color: #87162e;
+      transition: 0.6s ease; }
       .seccion_general article a:hover {
         color: #ffffff;
-        transition: 0.6s; }
+        transition: 0.6s ease; }
     .seccion_general article .ver_mas {
       color: #ffffff;
       background: #430714;
       padding: 0.5em 0.5em 0.5em 0.5em;
-      border-radius: 0.3em; }
+      border-radius: 0.3em;
+      transition: 1s ease; }
       .seccion_general article .ver_mas:hover {
         color: #87162e;
         background: #ffffff;
-        transition: 1s; }
+        transition: 1s ease; }
     .seccion_general article .ver_mas_destacado {
       color: #ffffff;
       background: #430714;
       padding: 0.5em 0.5em 0.5em 0.5em;
-      border-radius: 0.3em; }
+      border-radius: 0.3em;
+      transition: 1s ease; }
       .seccion_general article .ver_mas_destacado:hover {
         color: #87162e;
         background: #ffffff;
-        transition: 1s; }
+        transition: 1s ease; }
   .seccion_general .article_principal_general, .seccion_general .article_reseñas_general {
     background: rgba(0, 0, 0, 0.781);
     border-radius: 0.8em;
@@ -404,20 +424,22 @@ footer {
     line-height: 40px; }
   .form_register a {
     color: #6f0a20;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 0.6s ease; }
     .form_register a:hover {
       color: white;
-      transition: 0.6s; }
+      transition: 0.6s ease; }
   .form_register .volver_inicio a {
     font-size: 1.2em;
     color: #ffffff;
     background: #430714;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    border-radius: 0.3em; }
+    border-radius: 0.3em;
+    transition: 1s ease; }
     .form_register .volver_inicio a:hover {
       color: #87162e;
       background: #ffffff;
-      transition: 1s; }
+      transition: 1s ease; }
 
 .logo_ryl {
   margin-left: 0.9em;
@@ -441,11 +463,12 @@ footer {
   padding: 12px;
   color: white;
   margin: 16px 0;
-  font-size: 16px; }
+  font-size: 16px;
+  transition: 0.6s ease; }
   .botons_ryl:hover {
     background: white;
     color: #6f0a20;
-    transition: 0.6s; }
+    transition: 0.6s ease; }
 
 /* ---- FIN DE REGISTRO Y LOGIN ----*/
 /* ---- Escritorio pequeño/ tablet ----*/
