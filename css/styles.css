@@ -265,11 +265,10 @@ footer {
     justify-content: space-evenly; }
     footer ul li {
       margin-bottom: 0.5em; }
-      footer ul li a {
-        transition: 1.5s ease; }
+      footer ul li a img {
+        transition: 0.6s; }
         footer ul li a img:hover {
-          width: 99%;
-          transition: 1.5s ease; }
+          transform: scale(1.2); }
   footer h4 {
     font-size: 1.8em;
     color: #6f0a20;
