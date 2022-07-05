@@ -199,7 +199,7 @@ section {
   .index_section h3 {
     font-size: 2em;
     color: #ffffff;
-    margin: 4em 0 2em 0;
+    margin: 2em 0 1em 0;
     text-transform: uppercase;
     font-family: 'Abel', sans-serif;
     background: rgba(0, 0, 0, 0.781);
@@ -359,8 +359,8 @@ footer {
     background: rgba(0, 0, 0, 0.781);
     border-radius: 0.4em;
     border: 0.1em solid #430714;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
     padding: 1em 1em 1em 0em; }
     .seccion_general .obras_categorias ul {
       display: flex;
@@ -501,9 +501,9 @@ footer {
     align-items: center;
     justify-content: space-between; }
   .logo_principal {
-    margin: 1.5em 0 0 1em; }
+    margin: 1.5em 0 0 2em; }
   .navbar-nav {
-    margin: 2.5em 3.8em 0 0; }
+    margin: 2.5em 1.8em 0 0; }
   /* ---- MAIN ----*/
   .index_section {
     margin: 2em 44em 2em 2em; }
@@ -536,7 +536,7 @@ footer {
     .index_section h3 {
       font-size: 2.4em;
       color: #ffffff;
-      margin: 4em -40em 1em -25em;
+      margin: 2em -40em 1em -25em;
       text-transform: uppercase;
       text-align: start; }
   .parrafo_principal {
@@ -611,7 +611,9 @@ footer {
     .seccion_general .obra_destacada {
       margin: 0 -41em 0 1em; }
       .seccion_general .obra_destacada .titulo_destacado_obra {
-        margin: 1em 1em 1em -2.1em; }
+        margin: 1em 1em -1em -2.1em; }
+        .seccion_general .obra_destacada .titulo_destacado_obra img {
+          margin: 2em 1em 1em 1em; }
       .seccion_general .obra_destacada h3 {
         font-size: 2em;
         padding: 1em 0 0 0; }
@@ -622,7 +624,7 @@ footer {
       margin: 0 0 0 61em; }
     .seccion_general .obras_categorias {
       padding: 1em 1em 1em 0.3em;
-      margin: 1em -50em 1em -8em; }
+      margin: 4.5em -50em 1.8em -8em; }
       .seccion_general .obras_categorias h3 {
         margin-left: 11.8em;
         font-size: 2.6em; }

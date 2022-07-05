@@ -294,7 +294,7 @@ section {
     h3 {
         font-size: 2em;
         color: color(primary-text);
-        margin: 4em 0 2em 0;
+        margin: 2em 0 1em 0;
         text-transform: uppercase;
         font-family: 'Abel', sans-serif;;
         background: rgba(0, 0, 0, 0.781);
@@ -312,6 +312,7 @@ section {
             margin: 1em 1em 1em 1em;
         }
     }
+    
     
     .article_destacado {
         @extend .article_principal;
@@ -526,6 +527,13 @@ footer {
 
     .obras_categorias {
 
+        background: rgba(0, 0, 0, 0.781);
+        border-radius: 0.4em;
+        border: 0.1em solid color(primary-dark);
+        margin-top: 3em;
+        margin-bottom: 3em;
+        padding: 1em 1em 1em 0em;
+
         ul {
             display: flex;
             flex-wrap: wrap;
@@ -542,12 +550,6 @@ footer {
             font-size: 1.6em;
         }
 
-        background: rgba(0, 0, 0, 0.781);
-        border-radius: 0.4em;
-        border: 0.1em solid color(primary-dark);
-        margin-top: 1em;
-        margin-bottom: 1em;
-        padding: 1em 1em 1em 0em;
     }
 
     .article_reseñas_general {
@@ -746,16 +748,17 @@ footer {
     }
 
     .logo_principal {
-        margin: 1.5em 0 0 1em;
+        margin: 1.5em 0 0 2em;
     }
 
     .navbar-nav {
-        margin: 2.5em 3.8em 0 0;
+        margin: 2.5em 1.8em 0 0;
     }
 
     /* ---- MAIN ----*/
 
     .index_section {
+        
         margin: 2em 44em 2em 2em;
 
         .article_principal {
@@ -805,7 +808,7 @@ footer {
         h3 {
             font-size: 2.4em;
             color: color(primary-text);
-            margin: 4em -40em 1em -25em;
+            margin: 2em -40em 1em -25em;
             text-transform: uppercase;
             text-align: start;
         }
@@ -931,7 +934,11 @@ footer {
             margin: 0 -41em 0 1em;
 
             .titulo_destacado_obra {
-                margin: 1em 1em 1em -2.1em;
+                margin: 1em 1em -1em -2.1em;
+
+                img {
+                    margin: 2em 1em 1em 1em;
+                }
             }
 
             h3 {
@@ -947,12 +954,14 @@ footer {
         }
 
         .ver_mas_destacado {
+            
             margin: 0 0 0 61em;
         }
 
         .obras_categorias {
+
             padding: 1em 1em 1em 0.3em;
-            margin: 1em -50em 1em -8em;
+            margin: 4.5em -50em 1.8em -8em;
             
             h3 {
                 margin-left: 11.8em;
