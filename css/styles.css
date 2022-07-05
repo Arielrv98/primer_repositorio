@@ -364,7 +364,8 @@ footer {
       justify-content: center;
       padding: 1em 1em 1em 1em; }
     .seccion_general .obras_categorias a {
-      text-decoration: none; }
+      text-decoration: none;
+      font-size: 1.4em; }
     .seccion_general .obras_categorias h3 {
       font-size: 1.6em; }
   .seccion_general .article_reseñas_general {
@@ -609,15 +610,15 @@ footer {
       padding: 1em 1em 1em 1em;
       margin: 1em -32em 1em 8em; }
       .seccion_general .obras_categorias h3 {
-        margin-left: 12.8em; }
+        margin-left: 14.8em; }
       .seccion_general .obras_categorias h4 {
-        margin-left: 11.3em; }
+        margin-left: 13.1em; }
       .seccion_general .obras_categorias ul {
         padding: 1em 1em 1em 1em; }
     .seccion_general .categorias_peliculas h3 {
-      margin-left: 11em; }
+      margin-left: 13em; }
     .seccion_general .categorias_peliculas h4 {
-      margin-left: 9.8em; }
+      margin-left: 11.6em; }
   .parrafo_principal_general {
     text-align: start; }
   .obra_destacada {
