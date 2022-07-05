@@ -16,7 +16,7 @@ a {
   background-image: url(../img/background_juegos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50%; }
+  background-position: 41%; }
 
 .background_peliculas {
   background-image: url(../img/ring_back.jpg); }
@@ -215,6 +215,8 @@ section {
   .index_section .article_destacado {
     margin: 0 0 3em 0;
     border: 0.3em solid #430714; }
+    .index_section .article_destacado img {
+      padding: 0.1em 0 0 0; }
   .index_section article {
     padding: 0 0 6em 0; }
     .index_section article h4 {
@@ -262,7 +264,8 @@ footer {
   height: 9.2em; }
   footer ul {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    margin-left: -2.5em; }
     footer ul li {
       margin-bottom: 0.5em; }
       footer ul li a img {
@@ -347,7 +350,8 @@ footer {
     margin-top: 1em;
     margin-bottom: 1em; }
     .seccion_general .obra_destacada p {
-      padding: 1em 1em 1em 1em; }
+      padding: 1em 1.5em 1em 1.5em;
+      font-size: 1.5em; }
     .seccion_general .obra_destacada h3 {
       margin: 0 0 0 2em;
       font-size: 1.6em; }
@@ -371,6 +375,8 @@ footer {
   .seccion_general .article_reseñas_general {
     margin: 0 0 3em 0;
     border: 0.3em solid #430714; }
+    .seccion_general .article_reseñas_general img {
+      padding: 0.1em 0 0 0; }
 
 .titulo_destacado_obra {
   margin: 2em 4em 0 1.8em; }
@@ -528,9 +534,9 @@ footer {
       text-align: start;
       margin-left: 0.3em; }
     .index_section h3 {
-      font-size: 1.9em;
+      font-size: 2.4em;
       color: #ffffff;
-      margin: 4em -40em 1em -17em;
+      margin: 4em -40em 1em -25em;
       text-transform: uppercase;
       text-align: start; }
   .parrafo_principal {
@@ -580,7 +586,7 @@ footer {
       text-transform: uppercase;
       text-align: start; }
     .seccion_general article {
-      padding: 0 0 6em 0; }
+      padding: 0 0 3em 0; }
       .seccion_general article h4 {
         padding: 0 0 1em 0;
         text-align: start;
@@ -592,33 +598,45 @@ footer {
       .seccion_general article .ver_mas {
         margin: 1em 1em 1em -12em; }
     .seccion_general .article_principal_general, .seccion_general .article_reseñas_general {
-      margin: 1em -41em 1em 1em; }
+      margin: 1em -41em 1em 1em;
+      padding: 2em 1em 2em 1em; }
+      .seccion_general .article_principal_general h2, .seccion_general .article_reseñas_general h2 {
+        margin-left: 0.2em; }
       .seccion_general .article_principal_general p, .seccion_general .article_reseñas_general p {
-        font-size: 1.7em; }
+        font-size: 1.7em;
+        margin-left: 0.5em; }
     .seccion_general .article_reseñas_general p {
       margin: 1em 15em -0.5em 1em;
       font-size: 1.7em; }
     .seccion_general .obra_destacada {
       margin: 0 -41em 0 1em; }
       .seccion_general .obra_destacada .titulo_destacado_obra {
-        margin: 1em 1em 1em -1.2em; }
+        margin: 1em 1em 1em -2.1em; }
       .seccion_general .obra_destacada h3 {
-        font-size: 2em; }
+        font-size: 2em;
+        padding: 1em 0 0 0; }
+      .seccion_general .obra_destacada p {
+        padding: 1em 3em 1em 1em;
+        font-size: 1.7em; }
     .seccion_general .ver_mas_destacado {
       margin: 0 0 0 61em; }
     .seccion_general .obras_categorias {
-      padding: 1em 1em 1em 1em;
-      margin: 1em -32em 1em 8em; }
+      padding: 1em 1em 1em 0.3em;
+      margin: 1em -50em 1em -8em; }
       .seccion_general .obras_categorias h3 {
-        margin-left: 14.8em; }
+        margin-left: 11.8em;
+        font-size: 2.6em; }
       .seccion_general .obras_categorias h4 {
-        margin-left: 13.1em; }
+        margin-left: 15.1em;
+        font-size: 2.4em; }
       .seccion_general .obras_categorias ul {
         padding: 1em 1em 1em 1em; }
+        .seccion_general .obras_categorias ul a {
+          font-size: 1.9em; }
     .seccion_general .categorias_peliculas h3 {
-      margin-left: 13em; }
+      margin-left: 10.4em; }
     .seccion_general .categorias_peliculas h4 {
-      margin-left: 11.6em; }
+      margin-left: 13.6em; }
   .parrafo_principal_general {
     text-align: start; }
   .obra_destacada {

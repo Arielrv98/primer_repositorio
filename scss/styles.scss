@@ -28,7 +28,7 @@ a {
         image: url(../img/background_juegos.jpg);
         repeat: no-repeat;
         size: cover;
-        position: 50%;
+        position: 41%;
     }
 }
 
@@ -317,6 +317,9 @@ section {
         @extend .article_principal;
         margin: 0 0 3em 0;
         border: 0.3em solid color(primary-dark);
+        img {
+            padding: 0.1em 0 0 0;
+        }
     }
 
     article {
@@ -382,6 +385,7 @@ footer {
     ul {
         display: flex;
         justify-content: space-evenly;
+        margin-left: -2.5em;
 
         li {
             margin-bottom: 0.5em;
@@ -510,7 +514,8 @@ footer {
         margin-bottom: 1em;
 
         p {
-            padding: 1em 1em 1em 1em;
+            padding: 1em 1.5em 1em 1.5em;
+            font-size: 1.5em;
         }
 
         h3 {
@@ -549,6 +554,9 @@ footer {
         @extend .article_principal_general;
         margin: 0 0 3em 0;
         border: 0.3em solid color(primary-dark);
+        img {
+            padding: 0.1em 0 0 0;
+        }
     }
 }
 
@@ -795,9 +803,9 @@ footer {
         }
 
         h3 {
-            font-size: 1.9em;
+            font-size: 2.4em;
             color: color(primary-text);
-            margin: 4em -40em 1em -17em;
+            margin: 4em -40em 1em -25em;
             text-transform: uppercase;
             text-align: start;
         }
@@ -878,7 +886,7 @@ footer {
         }
 
         article {
-            padding: 0 0 6em 0;
+            padding: 0 0 3em 0;
 
             h4 {
                 padding: 0 0 1em 0;
@@ -900,9 +908,15 @@ footer {
         .article_principal_general {
 
             margin: 1em -41em 1em 1em;
+            padding: 2em 1em 2em 1em;
+
+            h2 {
+                margin-left: 0.2em;
+            }
 
             p{
                 font-size: 1.7em;
+                margin-left: 0.5em;
             }
         }
 
@@ -917,11 +931,17 @@ footer {
             margin: 0 -41em 0 1em;
 
             .titulo_destacado_obra {
-                margin: 1em 1em 1em -1.2em;
+                margin: 1em 1em 1em -2.1em;
             }
 
             h3 {
                 font-size: 2em;
+                padding: 1em 0 0 0;
+            }
+
+            p {
+                padding: 1em 3em 1em 1em;
+                font-size: 1.7em;
             }
 
         }
@@ -931,33 +951,35 @@ footer {
         }
 
         .obras_categorias {
-            padding: 1em 1em 1em 1em;
-            margin: 1em -32em 1em 8em;
-
-            div {
-                
-            }
+            padding: 1em 1em 1em 0.3em;
+            margin: 1em -50em 1em -8em;
             
             h3 {
-                margin-left: 14.8em;
+                margin-left: 11.8em;
+                font-size: 2.6em;
             }
 
             h4 {
-                margin-left: 13.1em;
+                margin-left: 15.1em;
+                font-size: 2.4em;
             }
 
             ul {
                 padding: 1em 1em 1em 1em;
+
+                a {
+                    font-size: 1.9em;
+                }
             }
         }
 
         .categorias_peliculas {
             h3 {
-                margin-left: 13em;
+                margin-left: 10.4em;
             }
 
             h4 {
-                margin-left: 11.6em;
+                margin-left: 13.6em;
             }
         }
     }        
