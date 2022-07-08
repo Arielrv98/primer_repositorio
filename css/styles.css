@@ -24,7 +24,7 @@ a {
 .background_registro {
   background-image: url(../img/registro_back.jpg);
   background-size: auto;
-  background-position: 8%; }
+  background-position: 18%; }
 
 .background_login {
   background-image: url(../img/login_back.jpg);
@@ -99,14 +99,14 @@ nav {
     margin: 0 0 0 1em; }
 
 .contenedor_de_ul {
-  background: #000000;
+  background: black;
   z-index: 2;
   margin-top: -4em;
   margin: 0 -0.75em 0 -0.75em;
   padding-bottom: 0.2em; }
 
 .navegacion_principal {
-  background: #000000;
+  background: black;
   width: 100%; }
   .navegacion_principal ul li {
     display: block; }
@@ -217,6 +217,11 @@ section {
     border: 0.3em solid #430714; }
     .index_section .article_destacado img {
       padding: 0.1em 0 0 0; }
+    .index_section .article_destacado h5 {
+      font-size: 2em;
+      color: #ffffff;
+      padding: 0 0 1em 0;
+      font-family: 'Abel', sans-serif; }
   .index_section article {
     padding: 0 0 6em 0; }
     .index_section article h4 {
@@ -377,6 +382,11 @@ footer {
     border: 0.3em solid #430714; }
     .seccion_general .article_reseñas_general img {
       padding: 0.1em 0 0 0; }
+    .seccion_general .article_reseñas_general h5 {
+      font-size: 2em;
+      color: #ffffff;
+      padding: 0 0 1em 0;
+      font-family: 'Abel', sans-serif; }
 
 .titulo_destacado_obra {
   margin: 2em 4em 0 1.8em; }
@@ -393,9 +403,6 @@ footer {
   margin: -1em 0 2em 0;
   padding-left: 2em;
   padding-right: 2em; }
-
-.imagenes_destacadas {
-  display: none; }
 
 .numero_de_pag ul {
   display: flex; }
@@ -453,7 +460,7 @@ footer {
 
 .input_ryl {
   width: 100%;
-  background: #ffffff;
+  background: white;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
@@ -516,6 +523,9 @@ footer {
       .index_section .article_destacado p {
         margin: 1em 15em -0.5em 1em;
         font-size: 1.7em; }
+      .index_section .article_destacado h5 {
+        margin: 1em 6em -0.6em -8em;
+        font-size: 2.6em; }
     .index_section article {
       padding: 0 0 6em 0; }
       .index_section article h4 {
@@ -527,7 +537,7 @@ footer {
         padding: 0.7em 0 0.5em 0;
         text-align: start; }
       .index_section article a {
-        margin: 1em 1em 1em -12em; }
+        margin: 1em -0.1em -0.5em -12em; }
     .index_section h2 {
       font-size: 3.7em;
       color: #ffffff;
@@ -596,7 +606,7 @@ footer {
         padding: 0.7em 0 0.5em 0;
         text-align: start; }
       .seccion_general article .ver_mas {
-        margin: 1em 1em 1em -12em; }
+        margin: 1em 0.5em -0.4em -12em; }
     .seccion_general .article_principal_general, .seccion_general .article_reseñas_general {
       margin: 1em -41em 1em 1em;
       padding: 2em 1em 2em 1em; }
@@ -606,8 +616,19 @@ footer {
         font-size: 1.7em;
         margin-left: 0.5em; }
     .seccion_general .article_reseñas_general p {
-      margin: 1em 15em -0.5em 1em;
+      margin: 1em 15em -0.9em 1em;
       font-size: 1.7em; }
+    .seccion_general .article_reseñas_general img {
+      padding-left: 1em; }
+    .seccion_general .article_reseñas_general h4 {
+      margin-left: 0.5em;
+      margin-bottom: 0.5em; }
+    .seccion_general .article_reseñas_general h5 {
+      padding: 0 0 1em 0;
+      font-family: 'Abel', sans-serif;
+      font-weight: 700;
+      margin: 1em 6em -0.6em -8em;
+      font-size: 2.6em; }
     .seccion_general .obra_destacada {
       margin: 0 -41em 0 1em; }
       .seccion_general .obra_destacada .titulo_destacado_obra {
