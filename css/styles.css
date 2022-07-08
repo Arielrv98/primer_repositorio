@@ -404,6 +404,9 @@ footer {
   padding-left: 2em;
   padding-right: 2em; }
 
+.imagenes_destacadas {
+  display: none; }
+
 .numero_de_pag ul {
   display: flex; }
   .numero_de_pag ul li a {
@@ -416,7 +419,7 @@ footer {
 /* ---- REGISTRO Y LOGIN ----*/
 .form_register {
   width: 322px;
-  background: #000000;
+  background: black;
   opacity: 95%;
   padding: 30px;
   margin: auto;
@@ -425,7 +428,7 @@ footer {
   border-radius: 4px;
   font-family: 'calibri';
   color: white;
-  box-shadow: 7px 13px 37px #000; }
+  box-shadow: 7px 13px 37px black; }
   .form_register h4 {
     font-size: 1.2em;
     margin-bottom: 1.5em;

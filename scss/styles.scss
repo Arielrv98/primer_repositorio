@@ -135,10 +135,6 @@ a {
     }
 }
 
-
-
-
-
 /* ---- FIN BUSCADOR ----*/
 
 /* ---- NAV ----*/
@@ -471,8 +467,7 @@ footer {
             font-size: 1.2em;
             color: color(primary-light);
             transition: 0.6s ease;
-
-            &:hover {
+            &:hover{
                 color: color(primary-text);
                 transition: 0.6s ease;
             }
@@ -485,11 +480,11 @@ footer {
             border-radius: 0.3em;
             transition: 1s ease;
 
-            &:hover {
+            &:hover{
                 color: color(primary-light);
                 background: color(primary-text);
                 transition: 1s ease;
-            }
+            } 
         }
 
         .ver_mas_destacado {
@@ -499,20 +494,20 @@ footer {
             border-radius: 0.3em;
             transition: 1s ease;
 
-            &:hover {
+            &:hover{
                 color: color(primary-light);
                 background: color(primary-text);
                 transition: 1s ease;
-            }
+            } 
         }
-
+        
     }
 
     .article_principal_general {
         background: rgba(0, 0, 0, 0.781);
         border-radius: 0.8em;
         padding: 1em 1em 1em 1em;
-
+        
         p {
             margin: 1em 1em 1em 1em;
         }
@@ -537,6 +532,7 @@ footer {
     }
 
     .obras_categorias {
+
         background: rgba(0, 0, 0, 0.781);
         border-radius: 0.4em;
         border: 0.1em solid color(primary-dark);
@@ -550,12 +546,12 @@ footer {
             justify-content: center;
             padding: 1em 1em 1em 1em;
         }
-
+    
         a {
             text-decoration: none;
             font-size: 1.4em;
         }
-
+    
         h3 {
             font-size: 1.6em;
         }
@@ -566,7 +562,7 @@ footer {
         @extend .article_principal_general;
         margin: 0 0 3em 0;
         border: 0.3em solid color(primary-dark);
-
+        
         img {
             padding: 0.1em 0 0 0;
         }
@@ -601,6 +597,11 @@ footer {
     padding-right: 2em;
 }
 
+.imagenes_destacadas {
+
+    display: none;
+}
+
 .numero_de_pag ul {
     display: flex;
 
@@ -620,7 +621,7 @@ footer {
 
 .form_register {
     width: 322px;
-    background: #000000;
+    background: black;
     opacity: 95%;
     padding: 30px;
     margin: auto;
@@ -629,7 +630,7 @@ footer {
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px black;
 
     h4 {
         font-size: 1.2em;
