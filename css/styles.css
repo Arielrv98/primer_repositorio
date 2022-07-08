@@ -525,7 +525,8 @@ footer {
         font-size: 1.7em; }
       .index_section .article_destacado h5 {
         margin: 1em 6em -0.6em -8em;
-        font-size: 2.6em; }
+        font-size: 2.6em;
+        font-weight: 700; }
     .index_section article {
       padding: 0 0 6em 0; }
       .index_section article h4 {
